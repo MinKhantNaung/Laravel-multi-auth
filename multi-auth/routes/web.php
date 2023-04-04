@@ -29,5 +29,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
     Route::get('/staffs', [StaffController::class, 'index']);
 
-    Route::get('/roles', [RoleController::class, 'index']);
+    Route::get('/roles', [RoleController::class, 'index']); //
 });
